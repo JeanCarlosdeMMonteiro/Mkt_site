@@ -1,0 +1,240 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: #007BFF;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav {
+    margin: 1rem 0;
+}
+
+nav a {
+    color: #fff; /* Cor padrão dos links */
+    margin: 0 1rem;
+    text-decoration: none;
+    position: relative; /* Para posicionar o pseudo-elemento */
+    transition: color 0.3s; /* Transição suave para a cor */
+}
+
+nav a:hover {
+    color:black; /* Altere para a cor desejada ao passar o mouse */
+}
+
+nav a::after {
+    content: ""; /* Cria um pseudo-elemento */
+    display: block;
+    width: 100%; /* Largura igual ao link */
+    height: 2px; /* Espessura da linha */
+    background: black; /* Cor da linha */
+    position: absolute; /* Posiciona o pseudo-elemento */
+    left: 0;
+    bottom: -5px; /* Distância da parte inferior do link */
+    transform: scaleX(0); /* Inicia com escala 0 */
+    transition: transform 0.3s; /* Transição suave para a transformação */
+}
+
+nav a:hover::after {
+    transform: scaleX(1); /* Expande a linha ao passar o mouse */
+}
+
+section {
+    background: #f4f4f4;
+    border-radius: 8px;
+    margin: 1rem 0;
+    padding: 1rem;
+}
+
+footer {
+        text-align: center; /* Centraliza todo o conteúdo do footer */
+        padding: 1rem; /* Adiciona espaçamento ao redor do footer */
+    }
+    
+    .notas {
+        display: flex; /* Usa Flexbox para organizar as imagens em linha */
+        justify-content: center; /* Centraliza as imagens horizontalmente */
+    }
+    
+    .notas img {
+        width: 100px; /* Define uma largura fixa para as imagens */
+        height: 100px; /* Define uma altura fixa para as imagens */
+        object-fit: cover; /* Faz com que a imagem preencha o quadrado sem distorção */
+        margin: 0.5rem; /* Adiciona espaço entre as imagens */
+        border: 2px solid #007BFF; /* Adiciona uma borda ao redor da imagem (opcional) */
+        border-radius: 4px; /* Opcional: bordas arredondadas */
+    }
+    
+    .redes-sociais {
+        display: flex; /* Usa Flexbox para organizar os ícones em linha */
+        justify-content: center; /* Centraliza os ícones horizontalmente */
+        margin-top: 1rem; /* Adiciona espaço acima da seção de redes sociais */
+    }
+    
+    .redes-sociais a {
+        margin: 0 0.5rem; /* Adiciona espaço entre os links */
+    }
+    
+    .icone-rede {
+        width: 30px; /* Define a largura do ícone */
+        height: 30px; /* Define a altura do ícone */
+        transition: transform 0.3s; /* Adiciona uma transição suave ao passar o mouse */
+    }
+    
+    .icone-rede:hover {
+        transform: scale(1.1); /* Aumenta o ícone ao passar o mouse */
+    }
+    
+    @media (max-width: 600px) {
+        nav {
+            display: flex;
+            flex-direction: column;
+        }
+        nav a {
+            margin: 0.5rem 0;
+        }
+    }
+    
+#contato iframe {
+    text-align: center; /* Centraliza todo o conteúdo do footer */
+    padding: 1rem; /* Adiciona espaçamento ao redor do footer */
+    width: 100%; /* Faz o iframe ocupar 100% da largura do contêiner */
+    height: 600px; /* Altura fixa, ajuste conforme necessário */
+    max-width: 640px; /* Largura máxima para telas grandes */
+}
+form {
+    text-align: center; /* Centraliza todo o conteúdo do footer */
+    padding: 1rem; /* Adiciona espaçamento ao redor do footer */
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto; /* Centraliza o formulário */
+}
+
+form label {
+    margin: 0.5rem 0 0.2rem; /* Espaçamento entre o label e o input */
+}
+
+form input, form textarea {
+    padding: 0.5rem;
+    margin-bottom: 1rem; /* Espaçamento inferior */
+    border: 1px solid #ccc; /* Borda do input */
+    border-radius: 4px; /* Bordas arredondadas */
+}
+
+form button {
+    background: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 0.7rem;
+    border-radius: 4px;
+    cursor: pointer; /* Muda o cursor ao passar por cima */
+}
+
+form button:hover {
+    background: #0056b3; /* Cor ao passar o mouse */
+}
+
+@media (max-width: 600px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+    nav a {
+        margin: 0.5rem 0;
+    }
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f8f9fa; /* Cor de fundo suave */
+}
+
+header {
+    background: #007BFF;
+    color: #fff;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidade */
+}
+
+nav {
+    margin: 1rem 0;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 1rem;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: black;
+}
+
+section {
+    background: #ffffff; /* Fundo branco para o conteúdo */
+    border-radius: 8px;
+    margin: 2rem auto; /* Margem vertical */
+    padding: 2rem; /* Mais espaço interno */
+    max-width: 800px; /* Largura máxima para centralização */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+
+h2 {
+    color: #007BFF; /* Cor dos títulos */
+    border-bottom: 2px solid #007BFF; /* Linha abaixo dos títulos */
+    padding-bottom: 0.5rem; /* Espaço abaixo do título */
+}
+
+h3, h4 {
+    color: #333;
+}
+
+ul {
+    margin-left: 1.5rem; /* Espaçamento à esquerda */
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #007BFF; /* Cor de fundo do rodapé */
+    color: #fff;
+    position: relative; /* Para o posicionamento dos ícones */
+}
+
+.redes-sociais {
+    margin-top: 1rem;
+}
+
+.redes-sociais a {
+    color: #fff;
+    margin: 0 10px; 
+    font-size: 1.5rem; 
+    text-decoration: none; 
+    transition: color 0.3s; 
+}
+
+.redes-sociais a:hover {
+    color: black; 
+}
+
+@media (max-width: 600px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+    nav a {
+        margin: 0.5rem 0;
+    }
+}
